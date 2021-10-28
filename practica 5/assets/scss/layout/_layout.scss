@@ -1,0 +1,63 @@
+.l-container {
+    max-width     : $max-width;
+    padding-left  : 1rem;
+    padding-right : 1rem;
+    display       : flex;
+    margin-right  : auto;
+    margin-left   : auto;
+    flex-wrap     : wrap;
+}
+
+.l-section{
+    margin-bottom: 2rem;
+    @include from(l){
+        margin-bottom: 4rem;
+    }
+
+    &-diagonal{
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            z-index: var(--z-back);
+            transform: skewY(-1deg) scaleY(1.25);
+             @include from(l){
+            transform: skewY(-2deg) scaleY(1.1);
+             }
+            
+        }
+    }
+}
+
+
+
+
+
+// anchos personalizados 
+@for $i from 1 through 20 {
+    .s-#{$i*5} {
+        width: #{$i * 5%} ;
+    }
+}
+
+@include from(l) {
+    @for $i from 1 through 20 {
+        .l-#{$i*5} {
+            width: #{$i * 5%} ;
+        }
+    }
+}
+
+
+.center-block{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-content {
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.main-footer{
+    height: $header-height;
+    border-bottom:  1px solid $border-color;
+    background-color: #282D31;
+    color: #fff;
+    font-family: lato, sans-serif;
+    display: flex;
+    padding-bottom: 0;
+
+    @include from(l){
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+
+    a{
+        color: #00BFF0;
+    }
+}
+
+// .main-header__block{
+//     justify-content: space-between;
+//     align-items: center;
+//     height: 100%;
+// }
+
+// .main-logo {
+//     height: 2rem;
+
+// }

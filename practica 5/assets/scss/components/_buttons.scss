@@ -1,0 +1,15 @@
+.button{ 
+    display: inline-block;
+    color: var(--color-alert);
+    border: 1px solid;
+    padding: .5em 1em;
+    border-radius: .25rem;
+
+    &:hover{
+        background-color: var(--color-alert);
+        color: #fff;
+    }
+    &>a:visited {
+        color: var(--color-alert);
+    }
+}

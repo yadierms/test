@@ -1,0 +1,51 @@
+$max-width: 1200px; 
+
+$border-color: #CCC;
+
+$text-color: #53575A;
+
+$dark-color: #141618;
+
+$header-height: 4rem;
+
+
+$breakpoints: (
+    l: 960px
+);
+
+
+// paleta de colores
+
+:root{
+    --color-first : #007bdf;
+    --color-alert: #ff3c32;
+    --color-border:  #dfe0e0;
+}
+
+// Variables de apilamiento (z-index)
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+// variables tipografia
+
+:root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --body-font-size:  0.9rem;
+    --small-font-size: .75rem;
+
+  @include from(l){
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.5rem;
+        --body-font-size:  1rem;
+        --small-font-size: .8rem;
+    }
+
+}
